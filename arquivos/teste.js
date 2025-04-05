@@ -1,3 +1,4 @@
-function mostrarMensagem() {
-  alert("Você clicou no botão!");
+function mudarCor() {
+  const corAleatoria = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  document.body.style.backgroundColor = corAleatoria;
 }
