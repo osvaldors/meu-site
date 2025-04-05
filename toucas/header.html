@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+
+<head>
+	<title>Agitação - Natação | Gestão de toucas</title>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="keywords" content="Gestão de toucas - Agitação Natação">
+	<meta name="description" content="Gestão de toucas - Agitação Natação">
+
+
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap"
+		rel="stylesheet">
+
+
+	<link rel="stylesheet" href="./assets/vendor/font-awesome/css/all.min.css">
+	<!-- <link rel="stylesheet" href="./assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
+
+
+	<link rel="stylesheet" href="./assets/css/theme.css">
+
+
+	<style>
+		/*>>>>>>>>>>>>>>>> GERAL <<<<<<<<<<<<<<<*/
+
+		html {
+			behavior: 'smooth'
+		}
+
+		body {
+			font-family: "Parkinsans", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+		}
+
+
+
+		.u-sidebar-nav-menu__link.active,
+		.u-sidebar-nav-menu--top-level>.u-sidebar-nav--opened>.u-sidebar-nav-menu__link {
+			background-color: var(--blue);
+		}
+
+		.u-sidebar-nav-menu__link:hover {
+			color: #1b1e24;
+			background-color: #007bff2b;
+		}
+
+		.js-doughnut-chart {
+			width: 70px !important;
+			height: 70px !important;
+		}
+
+		.d-flex {
+			flex-wrap: wrap;
+		}
+
+		.u-header-middle h2 {
+			font-size: 15px;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			color: #38387a;
+		}
+
+		* {
+			scrollbar-width: thin;
+			/* Largura fina para Firefox */
+			scrollbar-color: #797aae #ffffff;
+			/* Thumb e track (Firefox) */
+		}
+
+		/*>>>>>>>>>>>>>>>> ADULTO <<<<<<<<<<<<<<<*/
+
+
+
+		/*>>>>>>>>>>>>>>>> INFANTIL <<<<<<<<<<<<<<<*/
+
+		.text-cinza {
+			color: #777676;
+		}
+
+		.text-branca {
+			color: #cecece;
+		}
+
+		.text-preta {
+			color: #000;
+		}
+
+		.text-lilas {
+			color: #6c15b6;
+		}
+
+		.text-laranja {
+			color: #fda700;
+		}
+
+		.text-marrom {
+			color: #605339;
+		}
+
+		.text-rosa {
+			color: #d84187;
+		}
+
+
+		.bg-prata {
+			background: #686667;
+		}
+
+		.bg-cinza {
+			background: #777676;
+		}
+
+		.bg-branca {
+			background: #cecece;
+		}
+
+		.bg-preta {
+			background: #000;
+		}
+
+		.bg-lilas {
+			background: #6c15b6;
+		}
+
+		.bg-laranja {
+			background: #fda700;
+		}
+
+		.bg-marrom {
+			background: #605339;
+		}
+
+		.bg-rosa {
+			background: #d84187;
+		}
+
+		.bg-prata {
+			background: #686667;
+		}
+
+		/*>>>>>>>>>>>>>>>> TODOS OS ALUNOS <<<<<<<<<<<<<<<*/
+
+		.table-hover tbody tr:hover {
+			cursor: pointer;
+			font-weight: 600;
+			background-color: #fff0f1 !important;
+			border-left: 4px solid red;
+			border-right: 4px solid red;
+			box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+		}
+
+		#tabela-todos-alunos tbody {
+			color: #565252;
+
+		}
+
+		.table thead th {
+			color: #69a9ed;
+		}
+
+		.badge-soft-branca {
+			background-color: rgb(203 203 203 / 10%);
+			color: #939393;
+		}
+
+		.badge-soft-cinza {
+			color: #333;
+			background-color: rgb(78 78 78 / 10%);
+		}
+
+		.badge-soft-preta {
+			color: #fff;
+			background-color: rgb(0 0 0 / 63%);
+		}
+
+		.badge-soft-prata {
+			color: #4d4d4d;
+			background-color: rgb(81 82 84 / 36%);
+		}
+
+		.badge-soft-lilas {
+			background-color: rgba(41, 114, 250, 0.1);
+		}
+
+		.badge-soft-laranja {
+			color: #ffac0c;
+			background-color: #fab63333;
+		}
+
+		.badge-soft-marrom {
+			color: #3b2f1c;
+			background-color: rgb(112 85 51 / 74%);
+		}
+
+		.badge-soft-rosa {
+			color: #e83e8c;
+			background-color: rgb(233 112 167 / 30%);
+		}
+
+
+		/*>>>>>>>>>>>>>>>> ESTOQUE DE TOUCAS <<<<<<<<<<<<<<<*/
+
+		#cards-container .card-text {
+			line-height: 13px;
+			font-size: .8rem;
+		}
+
+		#cards-container .list-group-item {
+			font-size: 19px;
+		}
+
+		.estoque-disponivel {
+			background: #00c9a7;
+			color: #fff;
+			font-size: 1.4rem;
+			padding: 0 10px;
+			border-radius: 10px;
+		}
+
+		#estoque-form,
+		#cadastrar-aluno-form,
+		#editarAlunoModal {
+			margin-bottom: 1rem;
+			margin-top: 20px;
+			padding: 30px;
+			width: max-content;
+			border: 1px solid #ffffff;
+			border-radius: 8px;
+			box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+		}
+
+		@media (max-width: 767.98px) {
+
+			#estoque-form,
+			#cadastrar-aluno-form {
+				width: auto;
+			}
+
+			.table-responsive {
+				height: 330px;
+			}
+
+			#tabela-todos-alunos thead {
+				display: contents;
+			}
+
+
+
+		}
+
+		@media (min-width: 992px) {
+			.u-logo-desktop {
+				margin-left: -16px;
+			}
+		}
+	</style>
+</head>
+
+
+<body>
+
+	<header class="u-header">
+		<div class="u-header-left">
+			<a class="u-header-logo" href="adulto.php">
+				<img class="u-logo-desktop" src="./assets/img/logo-agitacao.webp" width="160" alt="Agitação Esportes">
+				<img class="img-fluid u-logo-mobile" src="./assets/img/logo-mobile.png" width="50"
+					alt="Agitação Esportes">
+			</a>
+		</div>
+
+		<div class="u-header-middle">
+			<a class="js-sidebar-invoker u-sidebar-invoker" href="#!" data-is-close-all-except-this="true"
+				data-target="#sidebar">
+				<i class="fa fa-bars u-sidebar-invoker__icon--open"></i>
+				<i class="fa fa-times u-sidebar-invoker__icon--close"></i>
+			</a>
+
+			<h2>Gestão das Toucas</h2>
+
+		</div>
+
+		<div class="u-header-right">
+
+
+			<!-- Usuario -->
+			<div class="dropdown ml-2">
+				<a class="link-muted d-flex align-items-center" href="#!" role="button" id="dropdownMenuLink"
+					aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
+
+					<img class="u-avatar--xs img-fluid rounded-circle mr-2" src="<?= htmlspecialchars($user_foto) ?>"
+						alt="<?= htmlspecialchars($_SESSION['user_name'] ?? 'Usuário') ?>">
+
+					<span class="text-dark d-none d-sm-inline-block">
+						<?= htmlspecialchars($_SESSION['user_name']) ?> <small
+							class="fa fa-angle-down text-muted ml-1"></small>
+					</span>
+				</a>
+
+				<div class="dropdown-menu dropdown-menu-right border-0 py-0 mt-3" aria-labelledby="dropdownMenuLink"
+					style="width: 260px;">
+					<div class="card">
+
+						<div class="card-body">
+							<ul class="list-unstyled mb-0">
+								<!-- <li class="mb-4">
+									<a class="d-flex align-items-center link-dark" href="#!">
+										<span class="h3 mb-0"><i class="far fa-user-circle text-muted mr-3"></i></span>
+										Ver perfil
+									</a>
+								</li> -->
+
+								<li>
+									<a class="d-flex align-items-center link-dark" href="logout.php">
+										<span class="h3 mb-0"><i class="far fa-share-square text-muted mr-3"></i></span>
+										Sair
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- fim usuario -->
+		</div>
+	</header>
